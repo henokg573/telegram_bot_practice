@@ -21,6 +21,12 @@ ADMIN_CHAT_ID = '793034140'  # You should use your actual chat ID here
 bot = telebot.TeleBot(token=os.environ.get("API_KEY"))
 
 app = Flask(__name__)
+@app.route('/')
+def home():
+    return "Hello, World!"
+
+if __name__ == "__main__":
+    app.run(debug=True)  # This line is useful for local development, but Gunicorn will override it.
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
