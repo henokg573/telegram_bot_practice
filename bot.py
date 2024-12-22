@@ -1402,7 +1402,7 @@ def handle_admin_response(call):
             bot.send_message(user_id, "✅ Your payment has been verified! Please proceed to select your service.")
 
             # Ask the user to specify the service
-            markup = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
+            markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
             markup.add(types.KeyboardButton('for Scholarship and admission opportunities'),
                        types.KeyboardButton('for Ethiopian Passport application'),
                        types.KeyboardButton('for Early US Embassy appointment worldwide'),
