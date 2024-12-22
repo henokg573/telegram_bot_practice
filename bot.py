@@ -890,8 +890,8 @@ Payment options:
         Stay updated with the latest opportunities by clicking the button below:""",  reply_markup=channel_markup())
 
     elif service_selected == 'Join Channel':
-        markup = InlineKeyboardMarkup()
-        channel_button = InlineKeyboardButton("Join Scholarship Channel", url="https://t.me/+9_7fZiQKyoQ3NWJk")
+        markup = types.InlineKeyboardMarkup()
+        channel_button = types.InlineKeyboardButton("Join Scholarship Channel", url="https://t.me/+9_7fZiQKyoQ3NWJk")
         markup.add(channel_button)
         bot.reply_to(message, """🎓 You can find scholarships and related information on our Telegram channel. 
     Stay updated with the latest opportunities by clicking the button below:""",  reply_markup=markup)
@@ -905,38 +905,38 @@ Payment options:
         bot.reply_to(message, """please choose which option you are looking
                      for from the button below:""",  reply_markup=passport_markup())  
     elif service_selected == 'for New Passport application':
-        markup = InlineKeyboardMarkup()
-        channel_button = InlineKeyboardButton("please fill these google forms so we can schedule your passport", url="https://forms.gle/ELLajSwRt5BT3RXQA")
+        markup = types.InlineKeyboardMarkup()
+        channel_button = types.InlineKeyboardButton("please fill these google forms so we can schedule your passport", url="https://forms.gle/ELLajSwRt5BT3RXQA")
         markup.add(channel_button)
         bot.reply_to(message, """🎓 You can find scholarships and related information on our Telegram channel. 
     Stay updated with the latest opportunities by clicking the button below:""",  reply_markup=markup)
     elif service_selected == 'for Passport Renewal':
-        markup = InlineKeyboardMarkup()
-        channel_button = InlineKeyboardButton("please fill these google forms so we can schedule your passport", url="https://forms.gle/ELLajSwRt5BT3RXQA")
+        markup = types.InlineKeyboardMarkup()
+        channel_button = types.InlineKeyboardButton("please fill these google forms so we can schedule your passport", url="https://forms.gle/ELLajSwRt5BT3RXQA")
         markup.add(channel_button)
         bot.reply_to(message, """🎓 You can find scholarships and related information on our Telegram channel. 
     Stay updated with the latest opportunities by clicking the button below:""",  reply_markup=markup)
     elif service_selected == 'for Lost/Stolen Passport':
-        markup = InlineKeyboardMarkup()
-        channel_button = InlineKeyboardButton("please fill these google forms so we can schedule your passport", url="https://forms.gle/ELLajSwRt5BT3RXQA")
+        markup = types.InlineKeyboardMarkup()
+        channel_button = types.InlineKeyboardButton("please fill these google forms so we can schedule your passport", url="https://forms.gle/ELLajSwRt5BT3RXQA")
         markup.add(channel_button)
         bot.reply_to(message, """🎓 You can find scholarships and related information on our Telegram channel. 
     Stay updated with the latest opportunities by clicking the button below:""",  reply_markup=markup)
     elif service_selected == 'for Emergency Travel Document':
-       markup = InlineKeyboardMarkup()
-       channel_button = InlineKeyboardButton("please fill these google forms so we can schedule your passport", url="https://forms.gle/ELLajSwRt5BT3RXQA")
+       markup = types.InlineKeyboardMarkup()
+       channel_button = types.InlineKeyboardButton("please fill these google forms so we can schedule your passport", url="https://forms.gle/ELLajSwRt5BT3RXQA")
        markup.add(channel_button)
        bot.reply_to(message, """🎓 You can find scholarships and related information on our Telegram channel. 
     Stay updated with the latest opportunities by clicking the button below:""",  reply_markup=markup)
     elif service_selected == 'for Change of Details/Amendment':
-        markup = InlineKeyboardMarkup()
-        channel_button = InlineKeyboardButton("please fill these google forms so we can schedule your passport", url="https://forms.gle/ELLajSwRt5BT3RXQA")
+        markup = types.InlineKeyboardMarkup()
+        channel_button = types.InlineKeyboardButton("please fill these google forms so we can schedule your passport", url="https://forms.gle/ELLajSwRt5BT3RXQA")
         markup.add(channel_button)
         bot.reply_to(message, """🎓 You can find scholarships and related information on our Telegram channel. 
     Stay updated with the latest opportunities by clicking the button below:""",  reply_markup=markup)
     elif service_selected == 'for Special Passport (Official Purposes)':
-        markup = InlineKeyboardMarkup()
-        channel_button = InlineKeyboardButton("please fill these google forms so we can schedule your passport", url="https://forms.gle/ELLajSwRt5BT3RXQA")
+        markup = types.InlineKeyboardMarkup()
+        channel_button = types.InlineKeyboardButton("please fill these google forms so we can schedule your passport", url="https://forms.gle/ELLajSwRt5BT3RXQA")
         markup.add(channel_button)
         bot.reply_to(message, """🎓 You can find scholarships and related information on our Telegram channel. 
     Stay updated with the latest opportunities by clicking the button below:""",  reply_markup=markup)
@@ -981,51 +981,51 @@ If you need assistance, please don't hesitate to contact us.
             
     # IELTS Option
     elif service_selected == 'for Ielts':
-        markup = InlineKeyboardMarkup()
+        markup = types.InlineKeyboardMarkup()
     # General Channel Button
-        channel_button1 = InlineKeyboardButton("Join General IELTS Preparation Channel", url="https://t.me/general_ielts_channel")
+        channel_button1 = types.InlineKeyboardButton("Join General IELTS Preparation Channel", url="https://t.me/general_ielts_channel")
     # Specific Channel Button
-        channel_button2 = InlineKeyboardButton("Join IELTS Specific Channel", url="https://t.me/ielts_specific_channel")
+        channel_button2 = types.InlineKeyboardButton("Join IELTS Specific Channel", url="https://t.me/ielts_specific_channel")
         markup.add(channel_button1, channel_button2)
         bot.reply_to(message, """📚 **IELTS Preparation**\nStay updated with resources and opportunities by clicking one of the buttons below:""", reply_markup=markup)
 
 # TORFL Option
     elif service_selected == 'for TORFL':
-        markup = InlineKeyboardMarkup()
+        markup = types.InlineKeyboardMarkup()
     # General Channel Button
-        channel_button1 = InlineKeyboardButton("Join General TORFL Preparation Channel", url="https://t.me/general_torfl_channel")
+        channel_button1 = types.InlineKeyboardButton("Join General TORFL Preparation Channel", url="https://t.me/general_torfl_channel")
     # Specific Channel Button
-        channel_button2 = InlineKeyboardButton("Join TORFL Specific Channel", url="https://t.me/torfl_specific_channel")
+        channel_button2 = types.InlineKeyboardButton("Join TORFL Specific Channel", url="https://t.me/torfl_specific_channel")
         markup.add(channel_button1, channel_button2)
         bot.reply_to(message, """📚 **TORFL Preparation**\nStay updated with resources and opportunities by clicking one of the buttons below:""", reply_markup=markup)
 
 # Duolingo Option
     elif service_selected == 'for Doulingo':
-        markup = InlineKeyboardMarkup()
+        markup = types.InlineKeyboardMarkup()
     # General Channel Button
-        channel_button1 = InlineKeyboardButton("Join General Duolingo Channel", url="https://t.me/general_duolingo_channel")
+        channel_button1 = types.InlineKeyboardButton("Join General Duolingo Channel", url="https://t.me/general_duolingo_channel")
     # Specific Channel Button
-        channel_button2 = InlineKeyboardButton("Join Duolingo Specific Channel", url="https://t.me/duolingo_specific_channel")
+        channel_button2 = types.InlineKeyboardButton("Join Duolingo Specific Channel", url="https://t.me/duolingo_specific_channel")
         markup.add(channel_button1, channel_button2)
         bot.reply_to(message, """📚 **Duolingo Preparation**\nStay updated with resources and opportunities by clicking one of the buttons below:""", reply_markup=markup)
 
 # TOEIC Option
     elif service_selected == 'for TOEIC':
-        markup = InlineKeyboardMarkup()
+        markup = types.InlineKeyboardMarkup()
     # General Channel Button
-        channel_button1 = InlineKeyboardButton("Join General TOEIC Channel", url="https://t.me/general_toeic_channel")
+        channel_button1 = types.InlineKeyboardButton("Join General TOEIC Channel", url="https://t.me/general_toeic_channel")
     # Specific Channel Button
-        channel_button2 = InlineKeyboardButton("Join TOEIC Specific Channel", url="https://t.me/toeic_specific_channel")
+        channel_button2 = types.InlineKeyboardButton("Join TOEIC Specific Channel", url="https://t.me/toeic_specific_channel")
         markup.add(channel_button1, channel_button2)
         bot.reply_to(message, """📚 **TOEIC Preparation**\nStay updated with resources and opportunities by clicking one of the buttons below:""", reply_markup=markup)
 
 # SAT Option
     elif service_selected == 'for SAT':
-        markup = InlineKeyboardMarkup()
+        markup = types.InlineKeyboardMarkup()
     # General Channel Button
-        channel_button1 = InlineKeyboardButton("Join General SAT Channel", url="https://t.me/general_sat_channel")
+        channel_button1 = types.InlineKeyboardButton("Join General SAT Channel", url="https://t.me/general_sat_channel")
     # Specific Channel Button
-        channel_button2 = InlineKeyboardButton("Join SAT Specific Channel", url="https://t.me/sat_specific_channel")
+        channel_button2 = types.InlineKeyboardButton("Join SAT Specific Channel", url="https://t.me/sat_specific_channel")
         markup.add(channel_button1, channel_button2)
         bot.reply_to(message, """🎓 **SAT Preparation**\nStay updated with resources and opportunities by clicking one of the buttons below:""", reply_markup=markup)
 
@@ -1095,8 +1095,8 @@ If you need assistance, please don't hesitate to contact us.
             - Telegram: @easygate2""")
         
     elif message.text == 'Feedback':
-        markup = InlineKeyboardMarkup()
-        form_button = InlineKeyboardButton("📝 Fill Out Feedback Form", url="https://forms.gle/AezntVfbzwscHAdy9")
+        markup = types.InlineKeyboardMarkup()
+        form_button = types.InlineKeyboardButton("📝 Fill Out Feedback Form", url="https://forms.gle/AezntVfbzwscHAdy9")
         markup.add(form_button)
 
         bot.reply_to(message, """📝 **Feedback**  
@@ -1384,9 +1384,9 @@ def process_receipt(message):
     bot.send_message(ADMIN_CHAT_ID, f"📩 New Payment Receipt from {user_first_name} ({user_id}):")
 
     # Send Inline buttons to Admin for verification
-    markup = InlineKeyboardMarkup()
-    verify_button = InlineKeyboardButton("✅ Verify User", callback_data=f"verify_{user_id}")
-    invalid_button = InlineKeyboardButton("❌ Invalid Payment", callback_data=f"invalid_{user_id}")
+    markup = types.InlineKeyboardMarkup()
+    verify_button = types.InlineKeyboardButton("✅ Verify User", callback_data=f"verify_{user_id}")
+    invalid_button = types.InlineKeyboardButton("❌ Invalid Payment", callback_data=f"invalid_{user_id}")
     markup.add(verify_button, invalid_button)
     bot.send_message(ADMIN_CHAT_ID, "Please verify the payment from the user:", reply_markup=markup)
 
@@ -1403,17 +1403,17 @@ def handle_admin_response(call):
 
             # Ask the user to specify the service
             markup = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
-            markup.add(KeyboardButton('for Scholarship and admission opportunities'),
-                       KeyboardButton('for Ethiopian Passport application'),
-                       KeyboardButton('for Early US Embassy appointment worldwide'),
-                       KeyboardButton('for E-commerce'),
-                       KeyboardButton('for Online courses'),
-                       KeyboardButton('for International English proficiency tests'),
-                       KeyboardButton('for E-Visa applications'),
-                       KeyboardButton('for International payments'),
-                       KeyboardButton('for International career opportunities'),
-                       KeyboardButton('for Recommend educational travel consultancies'),
-                       KeyboardButton('for Assistance with any Embassy interview practice assistance')
+            markup.add(types.KeyboardButton('for Scholarship and admission opportunities'),
+                       types.KeyboardButton('for Ethiopian Passport application'),
+                       types.KeyboardButton('for Early US Embassy appointment worldwide'),
+                       types.KeyboardButton('for E-commerce'),
+                       types.KeyboardButton('for Online courses'),
+                       types.KeyboardButton('for International English proficiency tests'),
+                       types.KeyboardButton('for E-Visa applications'),
+                       types.KeyboardButton('for International payments'),
+                       types.KeyboardButton('for International career opportunities'),
+                       types.KeyboardButton('for Recommend educational travel consultancies'),
+                       types.KeyboardButton('for Assistance with any Embassy interview practice assistance')
                        )
 
             bot.send_message(user_id, "Please select the service you made the payment for:", reply_markup=markup)
