@@ -25,7 +25,7 @@ app = Flask(__name__)
 def send_welcome(message):
     print(f"Received /start from {message.chat.id}")  # Debugging
 
-    markup = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
+    markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
     btn1 = KeyboardButton('Scholarship and admission opportunities')
     btn2 = KeyboardButton('Ethiopian Passport application')
     btn3 = KeyboardButton('Early US Embassy appointment worldwide')
@@ -1163,7 +1163,7 @@ Click below to proceed with payment:""",reply_markup=payment_options_markup())
 
 
 def scholarship_options_markup():
-    markup = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
+    markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
     btn1 = KeyboardButton(' America')
     btn2 = KeyboardButton('Canada')
     btn3 = KeyboardButton('Europe')
@@ -1178,13 +1178,13 @@ def scholarship_options_markup():
     return markup
 
 def channel_markup():
-        markup = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
         btn1 = KeyboardButton('Join Channel')
         btn2 = KeyboardButton('main menu')
         markup.add(btn1, btn2)
         return markup
 def English_markup():
-    markup = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
+    markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
     btn1 = KeyboardButton('for Ielts')
     btn2 = KeyboardButton('for TORFL')
     btn3 = KeyboardButton('for Duolingo')
@@ -1196,7 +1196,7 @@ def English_markup():
     return markup
 
 def passport_markup():
-    markup = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)  
+    markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)  
     btn1 = KeyboardButton('for New Passport application')
     btn2 = KeyboardButton('for Passport Renewal')
     btn3 = KeyboardButton('for Lost/Stolen Passport')
@@ -1210,7 +1210,7 @@ def passport_markup():
 
 
 def ethiopassport_options_markup():
-    markup = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
+    markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
     btn1 = KeyboardButton('New Passport application')
     btn2 = KeyboardButton('Renewal/Replacement appointment')
     btn3 = KeyboardButton(' Lost/stolen Passport application appointment')
@@ -1223,7 +1223,7 @@ def ethiopassport_options_markup():
 
 
 def earlyUS_options_markup():
-    markup = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
+    markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
     btn1 = KeyboardButton('F1/J1 Visa')
     btn2 = KeyboardButton('B1/B2 Visa')
     btn3 = KeyboardButton('main menu')
@@ -1236,7 +1236,7 @@ def earlyUS_options_markup():
 
 
 def english_options_markup():
-    markup = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
+    markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
     btn1 = KeyboardButton('Ielts')
     btn2 = KeyboardButton('TORFL')
     btn3 = KeyboardButton('Duolingo')
@@ -1251,7 +1251,7 @@ def english_options_markup():
 
 
 def educational_options_markup():
-    markup = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
+    markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
     btn1 = KeyboardButton('Study visa interview')
     btn2 = KeyboardButton(' Work visa interview')
     btn3 = KeyboardButton('Visitor visa interview')
@@ -1266,7 +1266,7 @@ def educational_options_markup():
 
 
 def payment_options_markup():
-    markup = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
+    markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
     btn1 = KeyboardButton('Bank Transfer')
     btn2 = KeyboardButton('Telebirr')
     btn3 = KeyboardButton('PayPal')
@@ -1280,7 +1280,7 @@ def payment_options_markup():
 
 
 def entry_payment_options_markup():
-    markup = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
+    markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
     btn1 = KeyboardButton('Bank')
     btn2 = KeyboardButton('Telebirr transfer')
     btn3 = KeyboardButton('PayPal transfer')
@@ -1293,7 +1293,7 @@ def entry_payment_options_markup():
     return markup
 
 def back_to_payment_markup():
-    markup = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
+    markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
     btn1 = KeyboardButton('Choose Different Payment Method')
     btn2 = KeyboardButton('Already Paid? (Submit receipt)')
     btn3 = KeyboardButton('main menu')
@@ -1303,7 +1303,7 @@ def back_to_payment_markup():
     return markup
 
 def back_to_main_menu_markup():
-    markup = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
+    markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
     btn1 = KeyboardButton('Scholarship and admission opportunities')
     btn2 = KeyboardButton('Ethiopian Passport application')
     btn3 = KeyboardButton('Early US Embassy appointment worldwide')
@@ -1322,7 +1322,7 @@ def back_to_main_menu_markup():
 
 
 def payment_main_menu_markup():
-    markup = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
+    markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
     btn1 = KeyboardButton('Scholarship and admission opportunities')
     btn2 = KeyboardButton('Ethiopian Passport application')
     btn3 = KeyboardButton('Early US Embassy appointment worldwide')
