@@ -21,12 +21,18 @@ ADMIN_CHAT_ID = '793034140'  # You should use your actual chat ID here
 bot = telebot.TeleBot(token=os.environ.get("API_KEY"))
 
 app = Flask(__name__)
-@app.route('/')
-def home():
-    return "Hello, World!"
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8000)
+@app.route('/', methods=['GET'])
+def home():
+    return "Bot is running!"
+
+@app.route('/webhook', methods=['POST'])
+def webhook():
+    data = request.get_json()
+    print(data)  # Debugging: See incoming data
+    return "Webhook received", 200
+
+
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
