@@ -21,18 +21,12 @@ ADMIN_CHAT_ID = '793034140'  # You should use your actual chat ID here
 bot = telebot.TeleBot(token=os.environ.get("API_KEY"))
 
 app = Flask(__name__)
-
-@app.route('/', methods=['GET'])
+@app.route('/')
 def home():
-    return "Bot is running!"
+    return "Hello, World!"
 
-@app.route('/webhook', methods=['POST'])
-def webhook():
-    data = request.get_json()
-    print(data)  # Debugging: See incoming data
-    return "Webhook received", 200
-
-
+if __name__ == "__main__":
+    app.run(debug=True)  # This line is useful for local development, but Gunicorn will override it.
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
@@ -1519,7 +1513,6 @@ def handle_service_selection(message):
 
 # Start the bot
 bot.polling(none_stop=True)
-
 
 
 
